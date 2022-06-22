@@ -13,7 +13,8 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cors({ origin: true, credentials: true }));
 
 //routes
-app.use(require('./routes/index'))
+//app.use(require('./routes/index'))
+app.use(require('./routes/message'))
 
 //execution server web
 app.listen(4000)
